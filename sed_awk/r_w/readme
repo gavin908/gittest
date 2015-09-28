@@ -1,0 +1,3 @@
+/^<Company-list>/r company.list #read file
+/^<Company-list>/d #delete matched
+s/Allied/A-llied/ #this command have no affect

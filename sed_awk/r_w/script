@@ -1,0 +1,3 @@
+/^<Company-list>/r company.list
+/^<Company-list>/d
+s/Allied/A-llied/
