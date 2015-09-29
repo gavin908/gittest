@@ -1,0 +1,18 @@
+
+<para>
+
+This is a test paragraph in Interleaf style ASCII.Another line 
+in a paragraph. Yet another.
+
+<Figure Begin>
+
+v.111111100000101110001111101001010010001111111111000001010010001
+10000000000000000000110100101001010010101001000101010100101001010
+000000000
+
+<Figure End>
+
+<para>
+
+More line of text to be found after figure.
+These lines should print.
