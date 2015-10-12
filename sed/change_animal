@@ -1,2 +1,0 @@
-s/pig/cow/g
-s/cow/horse/g
