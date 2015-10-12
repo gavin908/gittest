@@ -1,0 +1,8 @@
+#!/bin/bash
+ls -l $* | awk '{
+	print $5, "\t", $9
+	sum += $5
+	++filesum
+}
+END {print "Total:", sum, "bytes (" filesum " files)"}
+'

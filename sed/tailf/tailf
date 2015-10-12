@@ -1,0 +1,28 @@
+#!/bin/bash
+
+file=$1
+pattern=$2
+kword=$3
+
+print_help(){
+        echo "print help"
+}
+
+
+echo "file:$file"
+if [ -z "$file" ]; then
+	print_help
+elif [ -z "$pattern" ]; then
+	echo "taif file:$file"
+	tail -f $file
+elif [ -n "$pattern" -a -z "$kword" ]; then
+	echo "tailf file:$file, pattern:$pattern"
+	tail -f $file | sed -n "${pattern}p"
+elif [ -n "$kword" ]; then
+	echo "tailf file:$file, pattern:$pattern, keyword:$kword"
+	tail -f $file | sed -n "${pattern}{
+/${kword}/p
+d
+N
+}"
+fi
